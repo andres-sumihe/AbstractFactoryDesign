@@ -1,6 +1,7 @@
 public class Hex implements Convert {
     @Override
     public void convert(int a){
-        System.out.println("Inside Rectangle::draw() Method.");
+        String result = Integer.toHexString(a);
+        System.out.println(result);
     }
 }
