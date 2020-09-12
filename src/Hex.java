@@ -1,6 +1,6 @@
-public class Rectangle implements Shape {
+public class Hex implements Convert {
     @Override
-    public void draw(){
+    public void convert(int a){
         System.out.println("Inside Rectangle::draw() Method.");
     }
 }

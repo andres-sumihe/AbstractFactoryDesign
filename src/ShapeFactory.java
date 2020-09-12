@@ -1,20 +1,15 @@
 public class ShapeFactory extends AbstractFactory {
     @Override
-    public Shape getShape(String shapeType){
+    public Convert getShape(String shapeType){
         if (shapeType == null) return null;
-        if (shapeType.equalsIgnoreCase("CIRCLE")){
-            return new Circle();
-        }else if (shapeType.equalsIgnoreCase("RECTANGLE")){
-            return new Rectangle();
-        }else if(shapeType.equalsIgnoreCase("SQUARE")){
-            return new Square();
+        if (shapeType.equalsIgnoreCase("BINARY")){
+            return new Binary();
+        }else if (shapeType.equalsIgnoreCase("HEX")){
+            return new Hex();
+        }else if(shapeType.equalsIgnoreCase("OCTAL")){
+            return new Octal();
         }
-
         return null;
     }
 
-    @Override
-    Color getColor(String color) {
-        return null;
-    }
 }
